@@ -62,7 +62,7 @@ Brave/Chrome a veces muestran advertencias extra en dominios .local. Usa .localh
 🐳 A. Con otros contenedores Docker locales
 Asegúrate de que el otro contenedor esté en la misma red que el proxy:
 
-# aca un ejemplo competo en donde
+# aca un ejemplo de uso en otro contenedor
 ```yaml
 services:
   miapp:

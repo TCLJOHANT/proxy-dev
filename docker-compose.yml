@@ -1,0 +1,19 @@
+services:
+  nginx-proxy-dev:
+    image: jwilder/nginx-proxy
+    container_name: nginx-proxy-dev
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs:ro
+      - ./vhost.d:/etc/nginx/vhost.d:ro
+      - ./html:/usr/share/nginx/html
+    networks:
+      - proxy-net-dev
+networks:
+  proxy-net-dev:
+    name: proxy-net-dev
+    driver: bridge

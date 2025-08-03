@@ -1,0 +1,26 @@
+# Certificados SSL (no deben subirse)
+certs/*.crt
+certs/*.key
+certs/*.pem
+
+.vscode/
+.env
+*.env
+
+# Archivos temporales de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Archivos de backup o temporales
+*~
+*.bak
+*.tmp
+
+# Sistema de control de contenedores
+docker-compose.override.yml

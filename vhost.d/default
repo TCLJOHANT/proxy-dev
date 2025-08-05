@@ -1,0 +1,3 @@
+# SE APLICA DE MANERA GLOBAL
+
+client_max_body_size 512M; # Aumentar el limite de tamaño de peticion
